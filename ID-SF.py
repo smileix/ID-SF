@@ -1,4 +1,12 @@
 # 模型构建
+import torch
+import torch.nn as nn
+from torch.autograd import Variable
+from torch.optim import lr_scheduler
+from torch import optim
+import torch.nn.functional as F
+import random
+import numpy as np
 
 # 数据处理过程中，则通过以下代码读取数据：
 with open(data_path, 'r') as f:
