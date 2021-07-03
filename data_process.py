@@ -1,4 +1,16 @@
 # 数据处理
+import copy
+import json
+import os
+import re
+import shutil
+import urllib.request
+from collections import OrderedDict
+from io import BytesIO
+from zipfile import ZipFile
+import difflib
+import numpy as np
+
 # 数据处理过程中，则通过以下代码读取数据：
 with open(data_path, 'r') as f:
     for ind, line in enumerate(f):
